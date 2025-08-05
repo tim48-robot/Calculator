@@ -1,0 +1,63 @@
+:root{
+    --button-border : rgb(255, 252, 252);
+}
+
+body{
+    margin:0;
+    width:100vw;
+    height:100vh;
+}
+
+
+#container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+}
+
+div#calculator{
+    width:20rem;
+    height:35rem;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgb(247, 244, 244);   
+}
+
+div#inputOutput{
+    border-radius:8px;
+    border: 2px solid gray;
+    padding: 1rem 0.5rem;
+    background-color: white;
+    text-align: right;    
+}
+
+#specialFunction, #anotherFunction, .anotherFunction{
+    display:flex;
+    justify-content: space-between;
+}
+
+button{
+    border: 2px solid var(--button-border);
+    border-radius: 8px;
+    padding:0.5rem;
+    background-color: lightgray;
+    font-size: 1.5rem;
+    margin-block-end: 0;
+    box-sizing: border-box;
+    width: 65px;
+    height: 65px;
+    margin-top: 1rem;
+    cursor:pointer;
+}
+
+button.number{
+    color:black;
+    background: white;
+}
+
+button.operate{
+    background:orangered;
+}
