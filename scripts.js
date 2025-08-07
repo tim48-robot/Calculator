@@ -78,7 +78,6 @@ backspace.addEventListener("click", () => {
 
 squareRoot.addEventListener("click", () => {
     output.textContent = Math.sqrt(output.textContent);
-    console.log(typeof output.textContent);
 })
 
 
@@ -89,7 +88,6 @@ memory.addEventListener("click", (e) =>{
     
     switch (e.target.id){
         case "mc":
-            console.log(e.id)
             memoryVar = 0;
             break;
         case "mr":
@@ -118,17 +116,9 @@ allClear.addEventListener("click", () => {
 
 operate.forEach((operateEach) => {
     operateEach.addEventListener("click", () => {
-        console.log(tempvar);
-        console.log(onOperator);
-        console.log(numberClicked);
-        console.log(operatorVar)
         if (onOperator === true && numberClicked === true){
                 if (operatorVar != "="){
-                    console.log(tempvar);
-                    console.log((output.textContent))
-                    console.log(operatorVar)
                     tempvar = arrowOperator[operatorVar](parseFloat(tempvar), parseFloat(output.textContent))
-                    console.log
                     output.textContent = tempvar;
                 }
         }  
