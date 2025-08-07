@@ -53,6 +53,20 @@ button{
     cursor:pointer;
 }
 
+#specialFunction>button{    
+    border: 2px solid var(--button-border);
+    border-radius: 8px;
+    padding:0.5rem;
+    background-color: lightgray;
+    font-size: 1.5rem;
+    margin-block-end: 0;
+    box-sizing: border-box;
+    width: 60px;
+    height: 50px;
+    margin-top: 1rem;
+    cursor:pointer;
+}
+
 button.number{
     color:black;
     background: white;
